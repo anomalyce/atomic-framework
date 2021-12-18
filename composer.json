@@ -1,0 +1,28 @@
+{
+  "name": "anomalyce/atomic-framework",
+  "description": "Boilerplate for Atomic packages.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    { "name": "Anomalyce" }
+  ],
+  "minimum-stability": "dev",
+  "replace": {
+    "anomalyce/atomic-core": "self.version",
+    "anomalyce/atomic-feature": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "Anomalyce\\Atomic\\Core\\": "src/Core/src/",
+      "Anomalyce\\Atomic\\Feature\\": "src/Feature/src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Anomalyce\\Atomic\\Core\\CoreServiceProvider",
+        "Anomalyce\\Atomic\\Feature\\FeatureServiceProvider"
+      ]
+    }
+  }
+}

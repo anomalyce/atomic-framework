@@ -1,0 +1,27 @@
+{
+  "name": "anomalyce/atomic-core",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    { "name": "Anomalyce" }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Anomalyce\\Atomic\\Core\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Anomalyce\\Atomic\\Core\\CoreServiceProvider"
+      ]
+    }
+  }
+}

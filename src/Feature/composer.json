@@ -1,0 +1,30 @@
+{
+  "name": "anomalyce/atomic-feature",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    { "name": "Anomalyce" }
+  ],
+  "require": {
+    "anomalyce/atomic-core": "self.version"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Anomalyce\\Atomic\\Feature\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Anomalyce\\Atomic\\Feature\\FeatureServiceProvider"
+      ]
+    }
+  }
+}

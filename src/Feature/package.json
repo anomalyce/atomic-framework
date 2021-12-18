@@ -1,0 +1,15 @@
+{
+  "name": "@anomalyce/atomic-feature",
+  "main": "resources/js/main.js",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Anomalyce",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anomalyce/atomic-framework.git"
+  },
+  "dependencies": {
+    "@anomalyce/atomic": "^1.0.0",
+    "@anomalyce/atomic-core": "^1.0.0"
+  }
+}
